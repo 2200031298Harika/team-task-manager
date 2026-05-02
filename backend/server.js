@@ -19,7 +19,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/projects", projectRoutes);
 
 app.get("/", (req, res) => {
-  res.send("API Running");
+  res.send("Backend Running Successfully");
 });
 
 sequelize.sync()

@@ -24,7 +24,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/api/projects/stats",
+        `${import.meta.env.VITE_API_URL}/api/projects/stats`,
         {
           headers: {
             authorization: token
